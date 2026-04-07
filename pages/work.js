@@ -14,6 +14,13 @@ const works = [
         url: "/work/ritual",
     },
     {
+        media: "/work/siretok/running.png",
+        title: "Sir Etok x Hatis Noit",
+        subtitle: "A film by EMPARA",
+        type: "image",
+        url: "/work/siretok",
+    },
+    {
         media: "/work/simulacra/simulacra1.jpg",
         title: "L.A. Dance Project's LAUNCH:LA 2025 | Simulacra",
         subtitle: "Concept, choreography, and direction",
