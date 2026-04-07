@@ -7,6 +7,13 @@ import Image from "next/image";
 
 const works = [
     {
+        media: "/work/ritual/group.jpg",
+        title: "Ritual",
+        subtitle: "A film by EMPARA & SUUVI",
+        type: "image",
+        url: "/work/ritual",
+    },
+    {
         media: "/work/simulacra/simulacra1.jpg",
         title: "L.A. Dance Project's LAUNCH:LA 2025 | Simulacra",
         subtitle: "Concept, choreography, and direction",
