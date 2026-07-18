@@ -4,91 +4,62 @@ import Teaser from "../components/Teaser";
 import { useRouter } from "next/router";
 import Head from "next/head";
 import Image from "next/image";
+import SecondaryFooter from "../components/SecondaryFooter";
 
 const works = [
     {
+        media: "/work/olipopparty.jpg",
+        title: "Olipop - Introducing Ginger Ale",
+        type: "image",
+        url: "/work/olipop",
+    },
+    {
+        media: "/work/clozee.mp4",
+        title: "CloZee - Courage (feat. ROZET) (Official Music Video)",
+        type: "video",
+        url: "/work/clozee",
+    },
+    {
         media: "/work/ritual/group.jpg",
         title: "Ritual",
-        subtitle: "A film by EMPARA & SUUVI",
         type: "image",
         url: "/work/ritual",
     },
     {
-        media: "/work/siretok/running.png",
-        title: "Sir Etok x Hatis Noit",
-        subtitle: "A film by EMPARA",
-        type: "image",
-        url: "/work/siretok",
+        media: "/work/nike.mp4",
+        title: "Nike | Run Your Run",
+        type: "video",
+        url: "/work/nike",
     },
     {
-        media: "/work/simulacra/simulacra1.jpg",
-        title: "L.A. Dance Project's LAUNCH:LA 2025 | Simulacra",
-        subtitle: "Concept, choreography, and direction",
+        media: "/work/mandymoore.jpeg",
+        title: "#MandyMoore | ByHeart",
         type: "image",
-        url: "/work/simulacra",
+        url: "/work/byheart"
     },
     {
-        media: "/work/babst.jpg",
-        title: "Babst Gallery",
-        subtitle: "In collaboration with flautist Daniela Mars",
-        type: "image",
-        url: "/work/babst",
+        media: "/work/veja.mp4",
+        title: "VEJA Sneakers",
+        type: "video",
+        url: "/work/veja",
     },
     {
-        media: "/work/soho/6.JPG",
-        title: "Soho House",
-        subtitle: "Choreography",
+        media: "/work/bluemoon.jpg",
+        title: "Blue Moon - Chromatics Music Video",
         type: "image",
-        url: "/work/sohohouse",
+        url: "/work/bluemoon",
     },
     {
-        media: "/work/bozomag/bozo.gif",
-        title: "Contemporary Art Review LA X BOZOMAG",
-        subtitle: "Empara guest performance",
-        type: "image",
-        url: "/work/bozomag"
-    },
-    {
-        media: "/work/bloodlust/1.jpg",
-        title: "Bloodlust Wine Bar | The Aster LA",
-        subtitle: "Choreography",
-        type: "image",
-        url: "/work/bloodlust",
-    },
-    {
-        media: "/work/welldone/Empara_IWR-8.jpg",
-        title: '"Well Done" the Show',
-        subtitle: "Concept, choreography, and direction",
-        type: "image",
-        url: "/work/welldone",
-    },
-    {
-        media: "/work/cloudLift.png",
-        title: "Sun Lover",
-        subtitle: "In collaboration with Sculptor Leah Piepgras",
-        type: "image",
-        url: "/work/oracleegg"
-    },
-    {
-        media: "/TravisDCWLaurel.png",
-        title: '"Well Done" the Film',
-        subtitle: "Concept, choreography, and direction",
-        type: "image",
+        media: "wdtease.mov",
+        title: "Well Done",
+        type: "video",
         url: "/work/welldonefilm",
     },
     {
-        media: "/work/ssor/2.png",
-        title: "She Sprang Out Red",
-        subtitle: "In collaboration with Ana Reyes",
+        media: "/work/siretok/running.jpg",
+        title: "Sir Etok - Hatis Noit Music Video",
         type: "image",
-        url: "/work/ssor"
-    },
-    {
-        media: "/work/clozee.gif",
-        title: "CloZee",
-        subtitle: "Movement direction",
-        type: "image",
-        url: "/work/clozee",
+        url: "/work/siretok",
     },
 ];
 
@@ -103,21 +74,21 @@ export default function Work() {
                 <title>Work</title>
                 <meta
                 name="description"
-                content="Past works | View the archive"
+                content="Featured Projects"
                 />
             </Head>
-            <div className="text-white w-full columns-1 md:columns-3 lg:columns-4 gap-2 md:gap-4 p-8 pt-[15vh] relative">
+            <div className="w-full columns-1 md:columns-3 gap-8 md:gap-12 p-8 pt-48 relative">
                 {works.map((work) => (
                     <div className="mb-8 md:mb-16 group relative cursor-pointer break-inside-avoid-column w-full relative" onClick={work.url ? () => router.push(work.url) : mockClick}>
-                        {(work.type) == "image" && <Image src={work.media} alt="Project image" className="opacity-80 group-hover:opacity-100 duration-300" width={500} height={300} priority/>}
-                        {(work.type) == "video" && <video loop autoPlay muted playsInline src={work.media} className="opacity-80 group-hover:opacity-100 duration-300"/>}
-                        <div className="text-[#bab5b1] group-hover:text-white duration-300 pt-6">
-                            <div className="uppercase text-sm tracking-widest pb-1">{work.title}</div>
-                            <div className="text-xs">{work.subtitle}</div>
+                        {(work.type) == "image" && <Image src={work.media} alt="Project image" className="opacity-80 group-hover:opacity-100 duration-300 aspect-video object-cover" width={500} height={300} priority/>}
+                        {(work.type) == "video" && <video loop autoPlay muted playsInline src={work.media} className="opacity-80 group-hover:opacity-100 duration-300 aspect-video"/>}
+                        <div className="text-[#bab5b1] group-hover:text-[#f2ede2] duration-300 pt-6">
+                            <div className="text-xs pb-1">{work.title}</div>
                         </div>
                     </div>
                 ))}
             </div>
+            <SecondaryFooter />
         </Layout>
     )
 }

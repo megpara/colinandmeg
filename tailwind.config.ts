@@ -15,8 +15,8 @@ const config: Config = {
       },
     },
     fontFamily: {
-      'display': ["the-seasons"],
-      'paragraph': ['var(--font-optima-nova)']
+      'display': ["helvetica"],
+      'paragraph': ["helvetica"]
     },
   },
   plugins: [],

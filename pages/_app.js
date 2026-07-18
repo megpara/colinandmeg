@@ -15,10 +15,10 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>Empara | A Movement Company</title>
+        <title>Colin & Meg | A director duo based in Los Angeles</title>
         <meta
           name="description"
-          content="Empara is a movement and choreography company focused on creating nontraditional contemporary dance experiences."
+          content="Together, Colin & Meg direct, DP, edit, and choreograph."
         />
         <meta
           name="viewport"
@@ -26,12 +26,13 @@ function MyApp({ Component, pageProps }) {
         />
         <link rel="stylesheet" href="https://use.typekit.net/oev0dtt.css" />
         <link rel="stylesheet" href="https://use.typekit.net/uao4cwk.css" />
-        <meta property="og:title" content="EMPARA | A movement company" key="ogtitle" />
-        <meta property="og:description" content="A movement company" key="ogdesc" />
-        <meta property="og:image" content="/og.png" />
+        <link rel="stylesheet" href="https://use.typekit.net/znb2ste.css" />
+        <meta property="og:title" content="Colin & Meg | A director duo based in Los Angeles" key="ogtitle" />
+        <meta property="og:description" content="Colin & Meg are a director duo for commercials, music videos, and films" key="ogdesc" />
+        <meta property="og:image" content="/biopic.JPG" />
         <link rel="apple-touch-icon" href="/favicons/apple-touch-icon.png" />
       </Head>
-      <div className={`${optimanova.variable} font-paragraph`}>
+      <div className={`${optimanova.variable} font-paragraph h-full`}>
         <Header />
         <Component {...pageProps} />
       </div>
