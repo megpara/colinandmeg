@@ -27,7 +27,7 @@ function MyApp({ Component, pageProps }) {
         <link rel="stylesheet" href="https://use.typekit.net/oev0dtt.css" />
         <link rel="stylesheet" href="https://use.typekit.net/uao4cwk.css" />
         <link rel="stylesheet" href="https://use.typekit.net/znb2ste.css" />
-        <meta property="og:title" content="Colin & Meg" key="ogtitle" />
+        <meta property="og:title" content="Colin & Meg Director Duo" key="ogtitle" />
         <meta property="og:description" content="A director duo based in Los Angeles" key="ogdesc" />
         <meta property="og:image" content="/biopic.JPG" />
         <link rel="apple-touch-icon" href="/favicons/apple-touch-icon.png" />
