@@ -40,7 +40,7 @@ export default function Header() {
             <div className="basis-1/3 flex gap-4 z-40 lowercase font-thin text-xs">
                 <a href="https://vimeo.com/user260843608" target="_blank">Vimeo</a>
                 <a href="https://www.instagram.com/colin_and_meg" target="_blank">Ig</a>
-                <a href="https://www.youtube.com/@colinandmeg.direct" target="_blank">Youtube</a>
+                <a href="https://www.youtube.com/@colinandmeg.direct" target="_blank" className="invisible md:visible">Youtube</a>
             </div>
             <Link className="basis-1/3 flex justify-center z-40 relative pt-12" href="/" replace>
                 <Image src="/colinandmeglogo.png" alt="Colin & Meg logo" width={140} height={25}/>
