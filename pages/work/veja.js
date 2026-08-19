@@ -13,7 +13,7 @@ export default function Veja() {
                     </div>
                     <script src="https://player.vimeo.com/api/player.js"></script>
                     <p className="text-xs italic pt-8">
-                    Veja Spec Ad<br />
+                    Veja<br />
                     Directed by Colin Lupe & Meg Paradowski<br />
                     Director of Photography: Colin Lupe<br />
                     Movement: Meg Paradowski<br />
